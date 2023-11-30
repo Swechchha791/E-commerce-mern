@@ -6,8 +6,12 @@ const Header = () => {
   return (
     <header>
       <Navbar expand="lg" bg="dark" variant="dark" collapseOnSelect>
-        <Container>
-          <Navbar.Brand href="/" className="text-warning">
+        <Container className="py-2">
+          <Navbar.Brand
+            href="/"
+            className="text-warning"
+            style={{ fontWeight: "bold" }}
+          >
             Shop-at-home
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

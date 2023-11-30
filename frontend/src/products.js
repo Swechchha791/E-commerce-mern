@@ -2,7 +2,7 @@ const products = [
   {
     _id: "1",
     name: "Wireless Bluetooth Headphone",
-    image: "",
+    image: "/images/wireless-headphone.jpeg",
     description:
       "Ooberpad proudly announces the availability of Bowers & Wilkins (B&W) PX7 Over-ear Noise Cancelling Wireless Headphones. When you are on the go, experience music that is at a whole new, exhilarating level. Irrespective of where you are, powerful drivers and adaptive noise cancelling put you at the centrestage of the music.",
     brand: "Apple",
@@ -15,7 +15,7 @@ const products = [
   {
     _id: "2",
     name: "iphone 15 pro",
-    image: "",
+    image: "/images/iphone-15.jpg",
     description:
       "DYNAMIC ISLAND COMES TO IPHONE 15 — Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can see who’s calling, track your next ride, check your flight status, and so much more.",
     brand: "Apple",
@@ -28,7 +28,7 @@ const products = [
   {
     _id: "3",
     name: "Wi-Fi Smart Camera",
-    image: "",
+    image: "/images/camera.jpeg",
     description:
       "Buy TP-LINK 2MP 1080p Full HD Home Security Wi-Fi Smart Camera Alexa Enabled 2-Way Audio Night Vision online in India at wholesale rates. If you have been looking for TP-LINK 2MP 1080p Full HD Home Security Wi-Fi Smart Camera Alexa Enabled 2-Way Audio Night Vision dealers, your search ends here as you can get the best TP-LINK 2MP 1080p Full HD Home Security Wi-Fi Smart Camera Alexa Enabled 2-Way Audio Night Vision distributors.",
     brand: "Apple",
@@ -41,7 +41,7 @@ const products = [
   {
     _id: "4",
     name: "Smart speaker with Alexa",
-    image: "",
+    image: "/images/alexa.jpg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "Amazon",
@@ -54,7 +54,7 @@ const products = [
   {
     _id: "5",
     name: "Wave Edge Smart Watch",
-    image: "",
+    image: "/images/smart-watch.jpg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "boAt",
@@ -66,8 +66,8 @@ const products = [
   },
   {
     _id: "6",
-    name: "Smart speaker with Alexa",
-    image: "",
+    name: "Airpode",
+    image: "/images/airpode.jpeg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "Amazon",
@@ -79,8 +79,8 @@ const products = [
   },
   {
     _id: "7",
-    name: "Smart speaker with Alexa",
-    image: "",
+    name: "Alexa",
+    image: "/images/alexa.jpg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "Amazon",
@@ -92,8 +92,8 @@ const products = [
   },
   {
     _id: "8",
-    name: "Smart speaker with Alexa",
-    image: "",
+    name: "wireless speaker",
+    image: "/images/wireless-speaker.jpeg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "Amazon",
@@ -105,8 +105,8 @@ const products = [
   },
   {
     _id: "9",
-    name: "Smart speaker with Alexa",
-    image: "",
+    name: "iphone 15",
+    image: "/images/iphone-15.jpg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "Amazon",
@@ -118,8 +118,8 @@ const products = [
   },
   {
     _id: "10",
-    name: "Smart speaker with Alexa",
-    image: "",
+    name: "wireless speaker",
+    image: "/images/wireless-speaker.jpeg",
     description:
       "3rd Generation Echo Dot-Smart Speaker with Alexa that can be operated by voice. Alexa can speak English and Hindi Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music.",
     brand: "Amazon",
@@ -129,4 +129,19 @@ const products = [
     rating: 4,
     numReviews: 5,
   },
+  {
+    _id: "3",
+    name: "Wi-Fi Smart Camera",
+    image: "/images/camera.jpeg",
+    description:
+      "Buy TP-LINK 2MP 1080p Full HD Home Security Wi-Fi Smart Camera Alexa Enabled 2-Way Audio Night Vision online in India at wholesale rates. If you have been looking for TP-LINK 2MP 1080p Full HD Home Security Wi-Fi Smart Camera Alexa Enabled 2-Way Audio Night Vision dealers, your search ends here as you can get the best TP-LINK 2MP 1080p Full HD Home Security Wi-Fi Smart Camera Alexa Enabled 2-Way Audio Night Vision distributors.",
+    brand: "Apple",
+    category: "Electronics",
+    price: "850.50",
+    countInStock: 5,
+    rating: 3.5,
+    numReviews: 3,
+  },
 ];
+
+export default products;
