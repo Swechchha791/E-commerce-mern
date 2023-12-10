@@ -9,7 +9,7 @@ const Footer = () => {
           <Col className="text-center">
             <h4>
               Copyright &copy;
-              <span className="text-warning">Shop at home</span>
+              <span className="text-warning">Shop-at-home</span>
             </h4>
           </Col>
         </Row>

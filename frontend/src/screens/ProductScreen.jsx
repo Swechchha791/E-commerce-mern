@@ -18,14 +18,14 @@ function ProductScreen({}) {
     fetchProduct();
   }, [id]);
 
-  // const product = products.find((pd) => pd._id === id);
+  // const product1 = products.find((pd) => pd._id === id);
 
   return (
     <>
       <Link className="btn btn-dark py-2" to="/">
         Go Back
       </Link>
-      <Row>
+      <Row className="my-5">
         <Col md={5} sm={12}>
           <Image src={product.image} alt={product.name} fluid />
         </Col>
