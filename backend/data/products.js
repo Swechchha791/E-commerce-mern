@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Wireless Bluetooth Headphone",
     image: "/images/wireless-headphone.jpeg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "2",
     name: "iphone 15 pro",
     image: "/images/iphone-15.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 4,
   },
   {
-    _id: "3",
     name: "Wi-Fi Smart Camera",
     image: "/images/camera.jpeg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: "4",
     name: "Smart speaker with Alexa",
     image: "/images/alexa.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "5",
     name: "Wave Edge Smart Watch",
     image: "/images/smart-watch.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "6",
     name: "Airpode",
     image: "/images/airpode.jpeg",
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "7",
     name: "Alexa",
     image: "/images/alexa.jpg",
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "8",
     name: "wireless speaker",
     image: "/images/wireless-speaker.jpeg",
     description:
@@ -104,7 +96,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "9",
     name: "iphone 15",
     image: "/images/iphone-15.jpg",
     description:
@@ -117,7 +108,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "10",
     name: "wireless speaker",
     image: "/images/wireless-speaker.jpeg",
     description:
@@ -130,7 +120,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "11",
     name: "Wi-Fi Smart Camera",
     image: "/images/camera.jpeg",
     description:
