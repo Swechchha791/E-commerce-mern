@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/products", productRoutes);
 
-// Error for not Found Product
+// Errors for not Found Product
 app.use(notFound);
 
 // Error handling for Wrong Request Id
