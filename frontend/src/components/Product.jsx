@@ -1,20 +1,18 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "../components/Rating";
 
 function Product({ product }) {
   return (
     <>
-      <Card className="my-3 p-3 rounded">
+      <Card className="my-3 px-3 py-2 rounded product_card">
         <Link to={`/product/${product._id}`}>
-          <Card.Img src={product.image} variant="top" />
+          <Card.Img src={product.image} variant="top" className="p-4" />
         </Link>
         <Card.Body>
-          <Link to={`/product/${product._id}`}>
-            <Card.Title as="div">
-              <strong>{product.name}</strong>
-            </Card.Title>
+          <Link className="link" to={`/product/${product._id}`}>
+            <Card.Title as="div">{product.name}</Card.Title>
           </Link>
           <Card.Text as="div">
             {/* <div className="my-3">
@@ -22,18 +20,18 @@ function Product({ product }) {
             </div> */}
             <Rating
               value={product.rating}
-              Text={`${product.numReviews} reviews`}
+              text={`${product.numReviews} reviews`}
             />
           </Card.Text>
-          <Card.Text as="h3">
-            <div className="my-3">{product.price}</div>
+          <Card.Text as="h4">
+            <div className="my-2">{product.price}</div>
           </Card.Text>
+          {/* <Card.Text as="div" className="d-grid">
+            <Button variant="warning" size="md">
+              Add to cart
+            </Button>
+          </Card.Text> */}
         </Card.Body>
-        <Card.Footer className="d-grid">
-          <Button variant="warning" size="lg">
-            Add to cart
-          </Button>
-        </Card.Footer>
       </Card>
     </>
   );

@@ -1,6 +1,6 @@
 const products = [
   {
-    name: "Wireless Bluetooth Headphone",
+    name: "Bluetooth Headphone",
     image: "/images/wireless-headphone.jpeg",
     description:
       "proudly announces the availability of Bowers & Wilkins (B&W) PX7 Over-ear Noise Cancelling Wireless Headphones. When you are on the go, experience music that is at a whole new, exhilarating level. Irrespective of where you are, powerful drivers and adaptive noise cancelling put you at the centrestage of the music.",

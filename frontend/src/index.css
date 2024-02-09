@@ -2,3 +2,32 @@ main{
     min-height: 80vh;
 }
 
+h1{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+h2{
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+.link{
+    text-decoration: none !important;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Home Product Card */
+
+.product_card{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.084);
+    transition: all 0.3s ease-in-out;
+}
+
+.product_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.195);
+
+}
