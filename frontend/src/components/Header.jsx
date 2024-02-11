@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Cart3 } from "react-bootstrap-icons";
+import { Basket2Fill } from "react-bootstrap-icons";
 
 const Header = () => {
   return (
@@ -9,11 +10,12 @@ const Header = () => {
       <Navbar expand="lg" bg="dark" variant="dark" collapseOnSelect>
         <Container className="py-2">
           <Navbar.Brand
-            className="text-warning"
+            className="text-warning d-flex align-items-center"
             style={{ fontWeight: "bold" }}
             as={Link}
             to="/"
           >
+            <Basket2Fill className="mx-2" />
             Shop-at-home
           </Navbar.Brand>
 

@@ -1,3 +1,7 @@
+body{
+    background: #fafcff !important;
+}
+
 main{
     min-height: 80vh;
 }
@@ -5,11 +9,13 @@ main{
 h1{
     font-size: 1.8rem;
     padding: 1rem 0;
+    font-weight: 600;
 }
 
 h2{
     font-size: 1.4rem;
     padding: 0.5rem 0;
+    font-weight: 500;
 }
 
 .link{
