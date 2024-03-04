@@ -37,3 +37,12 @@ h2{
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.195);
 
 }
+
+.card{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.084);
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.195);
+}

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <Container fluid>
-        <Row className="bg-dark py-5 text-light">
+        <Row className="bg-dark py-4 text-light">
           <Col className="text-center">
             <h4>
               Copyright &copy;
