@@ -30,6 +30,8 @@ h2{
 .product_card{
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.084);
     transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .product_card:hover{

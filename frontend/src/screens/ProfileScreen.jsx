@@ -62,7 +62,7 @@ const ProfileScreen = () => {
           <h2 className="text-center">User Profile</h2>
           {message && <Message variant="danger">{message}</Message>}
           {error && <Message variant="danger">{error}</Message>}
-          {success && <Message variant="success">{success}</Message>}
+          {success && <Message variant="success">Profile updated</Message>}
           {loading && <Loader />}
           <Form onSubmit={submitHandler}>
             <Form.Group controlId="name" className="py-2">
@@ -94,7 +94,6 @@ const ProfileScreen = () => {
                 placeholder="Enter password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required
               ></Form.Control>
             </Form.Group>
 
@@ -115,7 +114,9 @@ const ProfileScreen = () => {
         </Card>
       </Col>
       <Col md={8}>
-        <h2>Your Orders</h2>
+        <Card className="card px-5 py-4 mt-5">
+          <h2>Your Orders</h2>
+        </Card>
       </Col>
     </Row>
   );
