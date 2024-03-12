@@ -20,6 +20,7 @@ function Rating({ value, text, color }) {
       <span style={{ color }}>
         {value >= 5 ? <StarFill /> : value >= 4.5 ? <StarHalf /> : <Star />}
       </span>
+      &nbsp;
       <span>{text && text}</span>
     </div>
   );

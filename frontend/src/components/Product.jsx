@@ -6,13 +6,13 @@ import Rating from "../components/Rating";
 function Product({ product }) {
   return (
     <>
-      <Card className="my-3 px-3 py-2 rounded product_card">
+      <Card className="my-4 rounded product_card">
         <Link to={`/product/${product._id}`}>
           <Card.Img
             src={product.image}
             variant="top"
             className="py-4 px-2"
-            style={{ height: "12rem", width: "12rem" }}
+            style={{ height: "13rem", width: "12rem" }}
           />
         </Link>
         <Card.Body>

@@ -9,15 +9,20 @@ import { useNavigate } from "react-router-dom";
 import { Row, Col, Image, Form, ListGroup, Button } from "react-bootstrap";
 
 const CartScreen = () => {
-  const { id } = useParams();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const qty = location.search ? Number(location.search.split("=")[1]) : 1;
-
-  const dispatch = useDispatch();
+  const { id } = useParams();
+  // const qty = location.search ? Number(location.search.split("=")[1]) : 1;
+  const qty = location.search
+    ? Number(new URLSearchParams(location.search).get("qty"))
+    : 1;
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
   useEffect(() => {
     dispatch(addToCart(id, qty));
@@ -28,7 +33,14 @@ const CartScreen = () => {
   };
 
   const checkoutHandler = () => {
-    navigate(`/login?redirect=shipping`);
+    if (userInfo) {
+      // User is logged in, navigate directly to the shipping page
+      navigate("/shipping");
+    } else {
+      // User is not logged in, redirect to login page with redirect parameter
+      navigate("/login?redirect=shipping");
+    }
+    // navigate(`/login?redirect=shipping`);
   };
 
   return (
@@ -46,9 +58,15 @@ const CartScreen = () => {
           <ListGroup variant="flush">
             {cartItems.map((item) => (
               <ListGroup.Item key={item.product}>
-                <Row className="d-flex align-items-center">
+                <Row className="d-flex align-items-center py-2">
                   <Col md={2}>
-                    <Image src={item.image} alt={item.name} fluid rounded />
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      fluid
+                      rounded
+                      style={{ height: "7rem", width: "7rem" }}
+                    />
                   </Col>
                   <Col md={3}>
                     <Link className="link" to={`/product/${item.product}`}>

@@ -59,7 +59,7 @@ function ProductScreen() {
         <Message variant="danger">{error}</Message>
       ) : (
         <Row className="my-5">
-          <Col md={5} sm={12}>
+          <Col md={5} sm={12} className="d-flex justify-content-center">
             <Image
               src={product.image}
               alt={product.name}

@@ -31,18 +31,29 @@ const cartItemsFromStorage = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
   : [];
 
-const userLoginFromStorage = localStorage.getItem("userInfo");
+const userInfoFromStorage = localStorage.getItem("userInfo");
 //   ? JSON.parse(localStorage.getItem("userInfo"))
 //   : null;
-if (userLoginFromStorage && userLoginFromStorage !== "undefined") {
+if (userInfoFromStorage && userInfoFromStorage !== "undefined") {
   JSON.parse(localStorage.getItem("userInfo"));
 }
 // ? JSON.parse(localStorage.getItem("userInfo"))
 
+const shippingAddressFromStorage = localStorage.getItem("shippingAdderess");
+//   ? JSON.parse(localStorage.getItem("userInfo"))
+//   : null;
+if (shippingAddressFromStorage && shippingAddressFromStorage !== "undefined") {
+  JSON.parse(localStorage.getItem("shippingAddress"));
+}
+
 const initialState = {
-  cart: { cartItems: cartItemsFromStorage },
-  userLogin: { userInfo: userLoginFromStorage },
+  cart: {
+    cartItems: cartItemsFromStorage,
+    shippingAddress: shippingAddressFromStorage,
+  },
+  userLogin: { userInfo: userInfoFromStorage },
 };
+
 const middleware = [thunk];
 
 const store = createStore(
